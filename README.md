@@ -31,6 +31,13 @@ Pour débuter l'aventure avec Aeon, invitez le bot sur votre serveur Discord, ut
 
 ![samurai](https://github.com/StaiLee/Aeon/assets/102300908/4c27d337-e9e1-4443-b211-c9f64c2d23c7)
 
+![mage](https://github.com/StaiLee/Aeon/assets/102300908/3fcaf8b9-f8ba-43d8-bc15-f1083d7d9819)
+
+![archer](https://github.com/StaiLee/Aeon/assets/102300908/7f544a3f-09aa-4105-bd99-ae26e61ad3fc)
+
+![warrior](https://github.com/StaiLee/Aeon/assets/102300908/2e07765f-e098-4cf6-a32c-d4ef6a72b3f8)
+
+
 ## Projet B2 discord :
 
 Le bot est encore en développement. Cette idée est née d'une volonté de créer un bot original, destiné à être utilisé quotidiennement par des utilisateurs, en utilisant un système de jeu sur lequel je jouais lorsque j'étais plus jeune. J'ai donc décidé de lier ce projet personnel à un sujet d'école. Malheureusement, par manque de temps, etc., je ne peux proposer l'intégralité des fonctionnalités que je souhaite développer dans les délais impartis. Il n'y aura donc qu'une infime partie du jeu, suffisante pour le rendu du projet.
