@@ -31,4 +31,8 @@ Pour débuter l'aventure avec Aeon, invitez le bot sur votre serveur Discord, ut
 
 ![samurai](https://github.com/StaiLee/Aeon/assets/102300908/4c27d337-e9e1-4443-b211-c9f64c2d23c7)
 
+## Projet B2 discord :
+
+Le bot est encore en développement. Cette idée est née d'une volonté de créer un bot original, destiné à être utilisé quotidiennement par des utilisateurs, en utilisant un système de jeu sur lequel je jouais lorsque j'étais plus jeune. J'ai donc décidé de lier ce projet personnel à un sujet d'école. Malheureusement, par manque de temps, etc., je ne peux proposer l'intégralité des fonctionnalités que je souhaite développer dans les délais impartis. Il n'y aura donc qu'une infime partie du jeu, suffisante pour le rendu du projet.
+
 
