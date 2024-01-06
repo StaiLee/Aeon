@@ -19,6 +19,6 @@ Principales fonctionnalités :
 
     Système d'Historique et de Conversation : Mise en place d'un système d'historique des commandes et d'une conversation interactive pour guider les joueurs dans leurs choix.
 
-# Comment commencer :
+# Comment commencer ? :
 
 Pour débuter l'aventure avec Aeon, invitez le bot sur votre serveur Discord, utilisez la commande *start pour créer votre personnage et explorez les nombreuses possibilités offertes par ce monde fantastique 
