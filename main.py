@@ -14,13 +14,14 @@ intents.message_content = True
 
 Aeonya = commands.Bot(command_prefix="*", intents=discord.Intents.all())
 
-create_class_info_table()
-fill_class_info_table()
-
 @Aeonya.event
 async def on_ready():
     Aeonya.db = await aiosqlite.connect('aeon.db')
     c = await Aeonya.db.cursor()
+    await create_monster_table()
+    await create_class_info_table()
+    await fill_class_info_table()
+    await create_goblin()
     print(f'We have logged in as {Aeonya.user}')
 
 
@@ -177,8 +178,11 @@ async def play(ctx):
     command_history.add_command(ctx.message.content, ctx.author.id)
 
 
+@Aeonya.command()
+async def myStats(ctx):
+    await myStatsimport(ctx)
+    command_history.add_command(ctx.message.content, ctx.author.id)
 
 
 
-
-Aeonya.run('')
+Aeonya.run('token')

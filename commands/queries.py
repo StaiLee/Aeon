@@ -45,3 +45,29 @@ async def fill_class_info_table():
             await db.commit()
     except Exception as e:
         print(f"An error occurred: {e}")
+
+
+async def create_monster_table():
+    async with aiosqlite.connect('aeon.db') as db:
+        cursor = await db.execute(
+            '''
+            CREATE TABLE IF NOT EXISTS monster (
+                monster_id INTEGER PRIMARY KEY AUTOINCREMENT,
+                monster_name TEXT,
+                attack INTEGER,
+                health INTEGER
+            )
+            '''
+        )
+        await db.commit()
+
+async def create_goblin():
+    try:
+        async with aiosqlite.connect('aeon.db') as db:
+            await db.execute('''
+                INSERT INTO monster (monster_name, attack, health)
+                VALUES (?, ?, ?)
+            ''', ('Goblin', 10, 10))
+            await db.commit()
+    except Exception as e:
+        print(f"An error occurred: {e}")
