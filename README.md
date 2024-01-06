@@ -40,6 +40,6 @@ Pour débuter l'aventure avec Aeon, invitez le bot sur votre serveur Discord, ut
 
 ## Projet B2 discord :
 
-Le bot est encore en développement. Cette idée est née d'une volonté de créer un bot original, destiné à être utilisé quotidiennement par des utilisateurs, en utilisant un système de jeu sur lequel je jouais lorsque j'étais plus jeune. J'ai donc décidé de lier ce projet personnel à un sujet d'école. Malheureusement, par manque de temps, etc., je ne peux proposer l'intégralité des fonctionnalités que je souhaite développer dans les délais impartis. Il n'y aura donc qu'une infime partie du jeu, suffisante pour le rendu du projet.
+Le bot est encore en développement. Cette idée est née d'une volonté de créer un bot original, destiné à être utilisé quotidiennement par des utilisateurs, en utilisant un système de jeu sur lequel je jouais lorsque j'étais plus jeune. J'ai donc décidé de lier ce projet personnel à un sujet d'école. Malheureusement, par manque de temps, etc., je ne peux proposer l'intégralité des fonctionnalités que je souhaite développer dans les délais impartis. Il n'y aura donc qu'une infime partie du jeu, suffisante pour le rendu du projet, le bot sera cependant, mise a jours regulierement l'orsque j'aurais plus de temps.
 
 
