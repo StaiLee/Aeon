@@ -56,4 +56,49 @@ async def wikiclassimport(ctx):
 
     await ctx.send(embed=embed_wikiclass)
 
+@Aeonya.command()
+async def wikicommandsimport(ctx):
+    commands_list = [
+        "-all_commands",
+        "-archer",
+        "-attack",
+        "-classinfo",
+        "-clear_history",
+        "-fight",
+        "-history",
+        "-mage",
+        "-myStats",
+        "-play",
+        "-record_command",
+        "-reset_conversation",
+        "-rogue",
+        "-samurai",
+        "-show_history",
+        "-speak_about",
+        "-start",
+        "-tuto",
+        "-wannabearcher",
+        "-wannabemage",
+        "-wannaberogue",
+        "-wannabesamurai",
+        "-wannabewarrior",
+        "-warrior",
+        "-wikiclass",
+        "-wikicommands"
+    ]
+
+    commands_list.sort()
+
+    column_size = 5
+    commands_columns = [commands_list[i:i + column_size] for i in range(0, len(commands_list), column_size)]
+
+    embed_wikicommands = discord.Embed(
+        title="These are all the available commands",
+        description="\n".join(["\u200b" + "\n".join(commands) for commands in commands_columns]),
+        color=0xff8000
+    )
+
+    await ctx.send(embed=embed_wikicommands)
+
+
     

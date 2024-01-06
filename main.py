@@ -178,6 +178,11 @@ async def play(ctx):
     await playimport(ctx)
     command_history.add_command(ctx.message.content, ctx.author.id)
 
+@Aeonya.command()
+async def wikicommands(ctx):
+    await wikicommandsimport(ctx)
+    command_history.add_command(ctx.message.content, ctx.author.id)
+
 # import des commandes stats
 @Aeonya.command()
 async def myStats(ctx):
