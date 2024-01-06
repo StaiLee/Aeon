@@ -8,6 +8,7 @@ from commands.wannabe import *
 from commands.log import *
 from commands.conv import *
 from commands.logconv import *
+from commands.fight import *
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -177,12 +178,34 @@ async def play(ctx):
     await playimport(ctx)
     command_history.add_command(ctx.message.content, ctx.author.id)
 
-
+# import des commandes stats
 @Aeonya.command()
 async def myStats(ctx):
     await myStatsimport(ctx)
     command_history.add_command(ctx.message.content, ctx.author.id)
 
 
+# import des commandes fight
+@Aeonya.command()
+async def fight(ctx):
+    await fightimport(ctx)
+    command_history.add_command(ctx.message.content, ctx.author.id)
 
-Aeonya.run('token')
+@Aeonya.command()
+async def attack(ctx):
+    await attackimport(ctx)
+    command_history.add_command(ctx.message.content, ctx.author.id)
+
+@Aeonya.command()
+async def run(ctx):
+    await runimport(ctx)
+    command_history.add_command(ctx.message.content, ctx.author.id)
+
+
+
+if __name__ == '__main__':
+    async def main():
+        await Aeonya.start('TOKEN')
+
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(main())
