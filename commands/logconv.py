@@ -12,6 +12,7 @@ intents.message_content = True
 
 Aeonya = commands.Bot(command_prefix="*", intents=discord.Intents.all())
 
+# node logic
 class CommandNode:
     def __init__(self, command):
         self.command = command
@@ -39,10 +40,10 @@ class CommandHistory:
             current = current.next
         return commands
 
-# Hashtable pour stocker l'historique des commandes des utilisateurs
+# hastable for user commands
 user_commands = {}
 
-# Commande pour ajouter une commande à l'historique de l'utilisateur
+# add command to user history
 @Aeonya.command()
 async def record_commandimport(ctx, *, command):
     user_id = ctx.author.id
@@ -51,7 +52,7 @@ async def record_commandimport(ctx, *, command):
     user_commands[user_id].add_command(command)
     await ctx.send(f"Command '{command}' recorded for user {ctx.author.name}")
 
-# Commande pour afficher l'historique des commandes de l'utilisateur
+# print history for user
 @Aeonya.command()
 async def show_historyimport(ctx):
     user_id = ctx.author.id

@@ -6,7 +6,7 @@ intents.message_content = True
 
 Aeonya = commands.Bot(command_prefix="*", intents=discord.Intents.all())
 
-
+#create info table
 async def create_class_info_table():
     async with aiosqlite.connect('aeon.db') as db:
         cursor = await db.cursor()
@@ -24,7 +24,7 @@ async def create_class_info_table():
         )
         await db.commit()
 
-
+# fill the table
 
 async def fill_class_info_table():
     class_stats = [
@@ -46,7 +46,7 @@ async def fill_class_info_table():
     except Exception as e:
         print(f"An error occurred: {e}")
 
-
+# create monster table
 async def create_monster_table():
     async with aiosqlite.connect('aeon.db') as db:
         cursor = await db.execute(
@@ -61,6 +61,7 @@ async def create_monster_table():
         )
         await db.commit()
 
+#create goblin
 async def create_goblin():
     try:
         async with aiosqlite.connect('aeon.db') as db:

@@ -12,17 +12,16 @@ intents.message_content = True
 
 Aeonya = commands.Bot(command_prefix="*", intents=discord.Intents.all())
 
-
+# print stats for a class
 async def get_class_stats(class_name):
     async with aiosqlite.connect('aeon.db') as db:
         cursor = await db.execute('''
             SELECT * FROM class_info WHERE class_name = ?
         ''', (class_name,))
         stats = await cursor.fetchone()
-        return stats  # Retourne les statistiques de la classe choisie
-
-
-
+        return stats  
+    
+# wannabe commands
 @Aeonya.command()
 async def wannabeMageimport(ctx):
     user_id = ctx.author.id
@@ -129,6 +128,8 @@ async def wannabeArcherimport(ctx):
             await Aeonya.db.commit()
             await ctx.send(f"{ctx.author.name}, you have chosen the Archer class. Your adventure as an archer begins!")
 
+
+# myStats command
 @Aeonya.command()
 async def myStatsimport(ctx):
     user_id = ctx.author.id

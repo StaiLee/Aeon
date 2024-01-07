@@ -12,7 +12,7 @@ intents.message_content = True
 
 Aeonya = commands.Bot(command_prefix="*", intents=discord.Intents.all())
 
-
+# node logic
 class Node:
     def __init__(self, question, left=None, right=None):
         self.question = question
@@ -33,7 +33,7 @@ class ConversationTree:
     def reset(self):
         self.current_node = self.root
 
-# Création de l'arbre de conversation
+# conv tree
 conversation = ConversationTree()
 node_1 = conversation.add_branch("Do you need help with programming?", "Python", "Java")
 node_2 = conversation.add_branch("Do you need help with hardware?", "PC", "Mobile")
@@ -41,7 +41,7 @@ node_2 = conversation.add_branch("Do you need help with hardware?", "PC", "Mobil
 conversation.root.left = node_1
 conversation.root.right = node_2
 
-# Commandes Discord
+# conv commands
 @Aeonya.command()
 async def help_conversationimport(ctx):
     conversation.reset()

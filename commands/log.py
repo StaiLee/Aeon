@@ -12,6 +12,7 @@ intents.message_content = True
 
 Aeonya = commands.Bot(command_prefix="*", intents=discord.Intents.all())
 
+# node logic
 
 class CommandNode:
     def __init__(self, command, user_id):
@@ -60,6 +61,7 @@ class CommandHistory:
 
 command_history = CommandHistory()
 
+# log commands
 @Aeonya.command()
 async def historyimport(ctx):
     last_command = command_history.get_last_command(ctx.author.id)

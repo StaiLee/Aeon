@@ -25,7 +25,7 @@ async def on_ready():
     await create_goblin()
     print(f'We have logged in as {Aeonya.user}')
 
-
+# main command register 
 @Aeonya.command()
 async def start(ctx):
     user_id = ctx.author.id
@@ -60,7 +60,7 @@ async def start(ctx):
 
 
 
-# import de toutes les commandes logs
+# logs commands
 @Aeonya.command()
 async def history(ctx):
     await historyimport(ctx)
@@ -76,7 +76,7 @@ async def clear_history(ctx):
     await clear_historyimport(ctx)
     command_history.add_command(ctx.message.content, ctx.author.id)
 
-# import de toutes les commandes conv
+# conv commands
 @Aeonya.command()
 async def help_conversation(ctx):
     await help_conversationimport(ctx)
@@ -97,7 +97,7 @@ async def speak_about(ctx):
     await speak_aboutimport(ctx)
     command_history.add_command(ctx.message.content, ctx.author.id)
 
-# import de toutes les commandes logconv
+# logconv commands
     
 @Aeonya.command()
 async def record_command(ctx, *, command):
@@ -110,7 +110,7 @@ async def show_history(ctx):
     command_history.add_command(ctx.message.content, ctx.author.id)
 
 
-# import des toutes les classes
+# classes commands
 @Aeonya.command()
 async def warrior(ctx):
     await warriorimport(ctx)
@@ -136,7 +136,7 @@ async def rogue(ctx):
     await rogueimport(ctx)
     command_history.add_command(ctx.message.content, ctx.author.id)
 
-# import de touts les wannabe
+# wannabe commands
 @Aeonya.command()
 async def wannabewarrior(ctx):
     await wannabeWarriorimport(ctx)
@@ -162,7 +162,7 @@ async def wannaberogue(ctx):
     await wannabeRogueimport(ctx)
     command_history.add_command(ctx.message.content, ctx.author.id)
 
-# import de toutes les infos
+# info commands
 @Aeonya.command()
 async def tuto(ctx):
     await tutoimport(ctx)
@@ -183,14 +183,14 @@ async def wikicommands(ctx):
     await wikicommandsimport(ctx)
     command_history.add_command(ctx.message.content, ctx.author.id)
 
-# import des commandes stats
+# stats commands
 @Aeonya.command()
 async def myStats(ctx):
     await myStatsimport(ctx)
     command_history.add_command(ctx.message.content, ctx.author.id)
 
 
-# import des commandes fight
+# fight commands
 @Aeonya.command()
 async def fight(ctx):
     await fightimport(ctx)
@@ -207,7 +207,7 @@ async def run(ctx):
     command_history.add_command(ctx.message.content, ctx.author.id)
 
 
-
+# run bot
 if __name__ == '__main__':
     async def main():
         await Aeonya.start('TOKEN')

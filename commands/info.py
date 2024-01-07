@@ -10,7 +10,7 @@ intents.message_content = True
 
 Aeonya = commands.Bot(command_prefix="*", intents=discord.Intents.all())
 
-
+# information commands
 @Aeonya.command()
 async def playimport(ctx):
     user_mention = ctx.author.mention
@@ -28,9 +28,6 @@ async def playimport(ctx):
     await ctx.send(embed=embed_dive)
 
    
-
-
-
 @Aeonya.command()
 async def tutoimport(ctx):
     embed_tuto = discord.Embed(

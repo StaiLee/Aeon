@@ -6,6 +6,8 @@ intents.message_content = True
 
 Aeonya = commands.Bot(command_prefix="*", intents=discord.Intents.all())
 
+
+# mage class info
 @Aeonya.command()
 async def mageimport(ctx):
     embed_mage = discord.Embed(
@@ -21,7 +23,7 @@ async def mageimport(ctx):
 
     await ctx.send(embed=embed_mage)
 
-
+# samurai class info
 @Aeonya.command()
 async def samuraiimport(ctx):
     embed_samourai = discord.Embed(
@@ -36,7 +38,7 @@ async def samuraiimport(ctx):
 
     await ctx.send(embed=embed_samourai)
 
-
+# warrior class info
 @Aeonya.command()
 async def warriorimport(ctx):
     embed_warrior = discord.Embed(
@@ -52,7 +54,7 @@ async def warriorimport(ctx):
 
     await ctx.send(embed=embed_warrior)
 
-
+# rogue class info
 @Aeonya.command()
 async def rogueimport(ctx):
     embed_rogue = discord.Embed(
@@ -68,7 +70,7 @@ async def rogueimport(ctx):
 
     await ctx.send(embed=embed_rogue)
 
-
+#archer class info
 @Aeonya.command()
 async def archerimport(ctx):
     embed_archer = discord.Embed(
